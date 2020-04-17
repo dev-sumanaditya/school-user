@@ -1,0 +1,35 @@
+<ion-toolbar class="toolbar">
+  <ion-title>Today</ion-title>
+  <h3>Monday | 12 Mar 2020</h3>
+</ion-toolbar>
+
+<ion-content>
+  <div class="calendar">
+    <ion-calendar [(ngModel)]="date"
+      (onChange)="onChange($event)"
+      [type]="type"
+      [format]="'YYYY-MM-DD'">
+    </ion-calendar>
+  </div>
+  <div class="info">
+    <div class="item">
+      <ion-icon name="easel-outline"></ion-icon>
+      <h6>12 ITEMS</h6>
+    </div>
+    <div class="item">
+      <ion-icon name="library-outline"></ion-icon>
+      <h6>4 UNREAD</h6>
+    </div>
+  </div>
+</ion-content>
+<div class="footer" (click)="closemodal(0)">
+  <ion-button button-type="button" fill="clear" shape="round" *ngIf="!changed">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>BACK</span>
+  </ion-button>
+  <div></div>
+  <ion-button (click)="closemodal(1)" button-type="button" fill="clear" shape="round" *ngIf="changed">
+    <span>GO</span>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-button>
+</div>

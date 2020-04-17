@@ -1,0 +1,43 @@
+.toolbar {
+    padding: 20px;
+    
+    ion-title {
+        font-weight: 800;
+    }
+
+    h3 {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+}
+
+.calendar {
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        ion-icon {
+            font-size: 28px;
+            margin-right: 5px;
+        }
+        h6 {
+            font-size: 12px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}

@@ -1,1 +1,46 @@
+.toolbar {
+    position: relative;
+
+    ion-title {
+        font-size: 22px;
+        color: black;
+        font-weight: 700;
+    }
+    ion-button {
+        margin-top: 6px;
+        --ripple-color : #333;
+    }
+
+    ion-icon {
+        color: black;
+    }
+}
+
+.footer {
+    padding: 5px 20px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    ion-button {
+        color: rgba(51, 51, 51, 0.8);
+        --ripple-color: transparent;
+        flex: 1;
+
+        ion-icon {
+            font-size: 26px;
+            transition-duration: 0.2s;
+        }
+    }
+
+    .active {
+        color: black;
+        ion-icon {
+            font-size: 40px;
+        }
+    }
+}
 
