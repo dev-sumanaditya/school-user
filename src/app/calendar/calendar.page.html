@@ -1,14 +1,16 @@
 <ion-toolbar class="toolbar">
-  <ion-title>Today</ion-title>
+  <h1>Today</h1>
   <h3>Monday | 12 Mar 2020</h3>
 </ion-toolbar>
 
-<ion-content>
-  <div class="calendar">
+<ion-content class="calendar">
+  <div>
     <ion-calendar [(ngModel)]="date"
-      (onChange)="onChange($event)"
+      (change)="onChange($event)"
       [type]="type"
-      [format]="'YYYY-MM-DD'">
+      [format]="'YYYY-MM-DD'"
+      [options]="data.options"
+      >
     </ion-calendar>
   </div>
   <div class="info">

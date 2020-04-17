@@ -20,8 +20,8 @@ export class TabsPage {
   async showCalendar() {
 
     const options: CalendarModalOptions = {
-      title: 'Basic',
-      color: 'danger'
+      color: 'primary',
+      cssClass: 'cal'
     };
     const modal = await this.modalController.create({
       component: CalendarPage,

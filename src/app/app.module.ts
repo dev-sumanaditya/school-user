@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarPageModule } from './calendar/calendar.module';
+import { SubPageModule } from './sub/sub.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,8 @@ import { CalendarPageModule } from './calendar/calendar.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    CalendarPageModule
+    CalendarPageModule,
+    SubPageModule
   ],
   providers: [
     StatusBar,

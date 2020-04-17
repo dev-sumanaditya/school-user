@@ -1,3 +1,13 @@
 <ion-content>
-  tab2
+  <div class="head" style="padding: 0 20px;">
+    <h4 style="font-weight: 800; color: #333;">Today</h4>
+  </div>
+  <div class="container">
+    <div class="item" (click)="presentModal()" *ngFor="let i of dummy">
+      <strong>Environmental Science:</strong>
+      <p>unread : 12</p>
+      <p>Videos: 4</p>
+      <p>Homework: 2 new</p>
+    </div>
+  </div>
 </ion-content>

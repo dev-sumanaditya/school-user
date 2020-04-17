@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { SubPage } from '../sub/sub.page';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private modal: ModalController) {}
+
+
+  async presentModal() {
+    const modal = await this.modal.create({
+      component: SubPage
+    });
+    return await modal.present();
+  }
+  public dummy = [1,1,1,1,1,1,1,1];
 
 }

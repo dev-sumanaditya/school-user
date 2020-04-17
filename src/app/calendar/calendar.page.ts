@@ -10,7 +10,7 @@ import { ModalController, NavParams } from '@ionic/angular';
 export class CalendarPage implements OnInit {
 
   public data;
-  public changed = true;
+  public changed = false;
 
   public date: string;
   public type: 'moment';
@@ -27,6 +27,7 @@ export class CalendarPage implements OnInit {
 
   onChange($event) {
     console.log($event);
+    this.changed = true;
   }
 
   async closemodal(id) {
