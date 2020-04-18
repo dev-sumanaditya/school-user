@@ -10,7 +10,9 @@
     margin-bottom: 20px;
     margin-left: 25px;
 }
-
+.green {
+    color: lawngreen !important;
+}
 .subject {
     display: flex;
     flex-direction: column;
@@ -42,7 +44,7 @@
                 margin: 0;
                 --padding-start: 5px;
                 --padding-end: 10px;
-                
+                color: indigo;
 
                 ion-icon {
                     font-size: 24px;
