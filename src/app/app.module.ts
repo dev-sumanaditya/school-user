@@ -11,6 +11,11 @@ import { AppComponent } from './app.component';
 import { CalendarPageModule } from './calendar/calendar.module';
 import { SubPageModule } from './sub/sub.module';
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { IonicStorageModule } from '@ionic/storage';
+
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -19,12 +24,16 @@ import { SubPageModule } from './sub/sub.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     CalendarPageModule,
-    SubPageModule
+    SubPageModule,
+    IonicStorageModule.forRoot({
+      name: '_mySchool'
+    })
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Geolocation
   ],
   bootstrap: [AppComponent]
 })

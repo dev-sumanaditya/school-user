@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(80, 45, 206);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.geo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ion-icon {
+        color: white;
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        max-width: 80%;
+        font-weight: 700;
+    }
+}
+
+
+.select {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+        color: white;
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+            border: 1px solid #ddd;
+            color: white;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    ion-input {
+        border: 2px solid white;
+        --background: rgba(255, 255, 255, 0.01);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        --placeholder-color: white;
+        --placeholder-opacity: 0.8;
+    }
+}

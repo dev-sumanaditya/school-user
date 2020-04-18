@@ -3,7 +3,7 @@
     <h4 style="font-weight: 800; color: #333;">Today</h4>
   </div>
   <div class="container">
-    <div class="item" (click)="presentModal()" *ngFor="let i of dummy">
+    <div class="item" routerLink="/sub" *ngFor="let i of dummy">
       <ion-ripple-effect></ion-ripple-effect>
       <div class="icon">
         <ion-icon name="newspaper-outline"></ion-icon>

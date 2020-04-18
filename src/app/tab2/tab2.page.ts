@@ -11,13 +11,6 @@ export class Tab2Page {
 
   constructor(private modal: ModalController) {}
 
-
-  async presentModal() {
-    const modal = await this.modal.create({
-      component: SubPage
-    });
-    return await modal.present();
-  }
   public dummy = [1,1,1,1,1,1,1,1];
 
 }

@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="container">
+
+    <div class="geo" *ngIf="!schoolData">
+      <ion-icon name="location-sharp"></ion-icon>
+      <ion-button (click)="getLocation()" button-type="button" fill="outline" strong="true" color="light">Detect Location</ion-button>
+      <p>We need your location info to get Schools near you</p>
+
+      <ion-spinner color="light" *ngIf="locating"></ion-spinner>
+
+    </div>
+
+    <div class="select" *ngIf="schoolData && !showLoginPage">
+      <strong>Schools near Bokaro Steel City</strong>
+      <div class="items">
+        <div class="item" *ngFor="let i of schoolData" (click)="showLogin()">
+          {{i.name}}
+        </div>
+      </div>
+    </div>
+
+    <div class="loginPage" *ngIf="showLoginPage">
+      <ion-input placeholder="Username" color="light" inputmode="text" maxlength="40" required></ion-input>
+      <ion-input placeholder="Password" color="light" inputmode="text" type="password" maxlength="40" required></ion-input>
+
+      <ion-button routerLink="/" button-type="button" fill="outline" strong="true" color="light">LOGIN</ion-button>
+    </div>
+
+  </div>
+</ion-content>
