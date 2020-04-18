@@ -1,0 +1,81 @@
+.container {
+
+    ion-slides {
+        height: 100vh;
+
+        --bullet-background: black !important;
+        --bullet-background-active: rgb(60, 60, 150);
+
+        ion-slide {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 800;
+                color: rgb(82, 82, 255);
+            }
+        }
+
+
+        .slide1 {
+
+            img {
+                width: 80%;
+                border-radius: 20px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            strong {
+                margin-top: 20px;
+                color: #333;
+            }
+            p {
+                max-width: 60%;
+                text-align: center;
+            }
+        }
+
+        .slide2 {
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 30px;
+
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .l {
+                flex: 1;
+
+                img {
+                    min-height: 60px;
+                    min-width: 60px;
+                }
+            }
+            .r {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 20px;
+            
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: indigo;
+                    margin: 0px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: left;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
