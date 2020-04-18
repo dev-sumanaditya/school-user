@@ -1,9 +1,25 @@
-<ion-toolbar>
+<ion-toolbar mode="ios">
   <ion-button (click)="dismiss()" slot="start" button-type="button" fill="clear">
     <ion-icon name="arrow-back-outline"></ion-icon>
-    <span>Back</span>
   </ion-button>
 </ion-toolbar>
 <ion-content>
-  <h1>Subject page</h1>
+  <h4 class="head">Mathematics :</h4>
+  <div class="content">
+    <div class="subject">
+      <div class="item" *ngFor="let i of dummy">
+        <div class="name">
+          Linear Equations Explained (new assignment 1)
+        </div>
+        <div class="btns">
+          <ion-button button-type="button" mode="ios" fill="clear" shape="round" size="small">
+            <ion-icon name="play-outline"></ion-icon>
+          </ion-button>
+          <ion-button button-type="button" mode="ios" fill="clear" shape="round" size="small">
+            <ion-icon name="download-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

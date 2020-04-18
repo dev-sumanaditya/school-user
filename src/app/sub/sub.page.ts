@@ -8,6 +8,8 @@ import { ModalController } from '@ionic/angular';
 })
 export class SubPage implements OnInit {
 
+  public dummy = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
   constructor(public modal: ModalController) { }
 
   ngOnInit() {
